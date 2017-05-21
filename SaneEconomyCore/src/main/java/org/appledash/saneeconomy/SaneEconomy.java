@@ -29,9 +29,7 @@ public class SaneEconomy extends JavaPlugin implements ISaneEconomy {
     private GithubVersionChecker versionChecker;
 
     private final Map<String, SaneEconomyCommand> COMMANDS = new HashMap<String, SaneEconomyCommand>() {{
-        put("balance", new BalanceCommand(SaneEconomy.this));
         put("ecoadmin", new EconomyAdminCommand(SaneEconomy.this));
-        put("pay", new PayCommand(SaneEconomy.this));
         put("saneeconomy", new SaneEcoCommand(SaneEconomy.this));
         put("balancetop", new BalanceTopCommand(SaneEconomy.this));
     }};
